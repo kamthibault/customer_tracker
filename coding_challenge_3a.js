@@ -1,19 +1,23 @@
 // Coding Challenge 03a
 
-let inventory = [
-    {sku:"SKU-027", name:"Shoe",price:6.99, stock: 59},
-    {sku:"SKU-029", name:"Shirt",price:60.99, stock: 79},
-    {sku:"SKU-017", name:"Shorts",price:36.99, stock: 51},
-    {sku:"SKU-002", name:"jacket",price:116.99, stock: 20},
+let customers = [
+    {name: "Kam", email: "kameronthibault@usf.edu"},
+    {name: "Joe", email: "joemoe@usf.edu"},
+    {name: "Sam", email: "SamIAm@usf.edu"},
+
+]
+    let Purchase = [
+    {purchase:"Shoe",price:6.99,},
+    {purchase:"Shirt",price:60.99,},
+    {purchase:"Shorts",price:36.99,},
+    {purchase:"jacket",price:116.99,},
 ];
-
-
-//Summary of products
-//
-inventory.forEach(obj => console.log(`${obj.sku}\t|\t${obj.name}`)), inventory.forEach(obj => console.log(`${obj.price}\t|\t${obj.stock}`))
-
-
-inventory.push (console.log({sku:"SKU-005", name:"beez",price:116.99, stock: 40}))
-
-
+console.log ("Customers:")
+customers.forEach (obj => console.log(`${obj.name}\t|\t${obj.email}`)),
+console.log ("Purchases:")
+Purchase.forEach (obj => console.log(`${obj.purchase}\t|\t${obj.price}`))
+customers.push (console.log({name:"jesus",email: "jesuschristmas@usf.edu"}))
+customers.shift (console.log)
+Purchase.push (console.log({name:"sock",price:30.99}))
+Purchase.reduce (console.log)
 
